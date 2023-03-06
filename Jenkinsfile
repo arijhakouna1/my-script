@@ -11,7 +11,7 @@ pipeline{
         
         nexusArtifactUploader (
           nexusVersion : 'nexus 3',
-          protcol : 'http',
+          protocol : 'http',
           nexusUrl : 'localhost:8081',
           groupId : 'my' ,
           version : ' version1 ',
