@@ -3,6 +3,7 @@ pipeline{
     agent any
   
   stages{
+    
   
     stage("nexus-deloy"){
     
@@ -19,12 +20,7 @@ pipeline{
           artifacts : [
             artifactId : 'my-script' ,
             type : 'sh' ,
-            file : 'target/my-script.sh'
-          ]
-        
-        
-        
-        );
+            file : 'target/my-script.sh']);
       
       
       }
