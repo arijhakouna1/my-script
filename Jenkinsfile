@@ -16,7 +16,7 @@ pipeline{
           groupId : 'my' ,
           version : ' version1 ',
           repository : 'raoua' ,
-          credentialId : 'nexus-connection' ,
+          credentialsId : 'nexus-connection' ,
           artifacts : [
             artifactId : 'my-script' ,
             type : 'sh' ,
