@@ -19,7 +19,7 @@ pipeline{
           artifacts : [
             artifactId : 'my-script' ,
             type : 'sh' ,
-            file : 
+            file : 'target/my-script.sh'
           ]
         
         
