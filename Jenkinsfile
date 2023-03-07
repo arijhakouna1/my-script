@@ -5,24 +5,11 @@ pipeline{
   stages{
     
   
-    stage("nexus-deloy"){
+    stage("upload to nexus"){
     
       steps{
         
-        nexusArtifactUploader (
-          nexusVersion : 'nexus 3',
-          protocol : 'http',
-          nexusUrl : 'localhost:8081',
-          groupId : 'my' ,
-          version : ' version1 ',
-          repository : 'raoua' ,
-          credentialsId : 'nexus-connection' ,
-          artifacts : [
-            artifactId : 'my-script' ,
-            type : 'sh' ,
-            file : 'my-script/target/my-script.sh']);
-      
-      
+        sh 'curl -u admin:admin123 -X POST http://192.168.1.178:8081/#browse/browse:arij'
       }
     }
   
